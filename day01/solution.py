@@ -7,3 +7,7 @@ with open("input.txt", "r") as input:
         calories = sum(map(int,lines))
         max_calories = max(max_calories,calories)
     print(max_calories)
+    calories = [sum(map(int,chunk.split("\n"))) for chunk in chunks]
+    calories.sort()
+    top_three = sum(calories[-3:])
+    print(top_three)
