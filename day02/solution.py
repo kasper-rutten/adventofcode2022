@@ -48,7 +48,7 @@ class RPS:
         player_1 = matchup.split(' ')[0]
         player_2 = matchup.split(' ')[1]
         score = 0
-        if player_2 == 'X':
+        if player_2 == 'Z':
             score += 6
             if player_1 == 'A': # other guy plays rock, we play paper
                 score += 2
@@ -64,7 +64,7 @@ class RPS:
                 score += 2
             if player_1 == 'C':
                 score += 3
-        if player_2 == 'Z':
+        if player_2 == 'X':
             if player_1 == 'A': # other guy plays rock, we play scissors
                 score += 3
             if player_1 == 'B': # other guy plays paper, we play rock
