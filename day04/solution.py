@@ -999,8 +999,8 @@ input = """71-97,71-72
 51-84,41-54
 49-74,22-92"""
 
-#with open("input.txt", "r") as input:
-assignments = input.split('\n')
+with open("input.txt", "r") as input:
+    assignments = input.readlines()
 assignments = [x.strip('\n') for x in assignments]
 assignments = [x.split(',') for x in assignments]
 fully_contains_count = 0
